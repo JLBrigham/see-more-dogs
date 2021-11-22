@@ -1,15 +1,3 @@
-// const apiConnection = fetch("https://dog.ceo/api/breeds/image/random/10");
-
-// apiConnection
-//   .then((res) => res.json())
-//   .then((data) => {
-//     console.log(data.message);
-//     return data.message;
-//   })
-//   .catch((err) => console.log(err));
-
-// console.log(apiConnection);
-
 class ApiConnection {
   constructor(url) {
     this.results = [];
@@ -25,6 +13,18 @@ class ApiConnection {
       })
       .catch((err) => console.log(err));
   }
+
+  displayResults() {
+    var div = document.getElementById("content-container");
+    this.results.forEach((result) => {
+      console.log(result);
+      var img = document.createElement("img");
+      img.src = result;
+      console.log(img.src);
+
+      div.appendChild(img);
+    });
+  }
 }
 
 var apiConnection = new ApiConnection(
@@ -32,6 +32,9 @@ var apiConnection = new ApiConnection(
 );
 
 apiConnection.connectToEndpoint();
+setTimeout(function () {
+  apiConnection.displayResults();
+}, 5000);
 
 // var chosenAPI = "https://dog.ceo/api/breeds/image/random/";
 
@@ -50,40 +53,7 @@ apiConnection.connectToEndpoint();
 //   });
 // }
 
-// function connectToEndpoint(url, numberOfResults) {
-//   fetch(url + numberOfResults)
-//     .then((res) => res.json())
-//     .then((data) => {
-//       results = data.message;
-//       function displayResults(results)
-//       // console.log(results);
-//       // var div = document.getElementById("content-container");
-//       // results.forEach((result) => {
-//       //   console.log(result);
-//       //   var img = document.createElement("img");
-//       //   img.src = result;
-//       //   img.width = "200";
-//       //   img.height = "300";
-//       //   console.log(img.src);
-
-//       //   div.appendChild(img);
-//       })
-
-//     .catch((err) => console.log(err));
 // }
-
-// // function displayResults(results) {
-// //   console.log(results);
-// // var div = document.getElementsByClassName("content-container");
-// // results.forEach((result) => {
-// //   console.log(result);
-// // var img = document.createElement("img");
-// // img.src = result;
-// // console.log(img.src);
-
-// // div.appendChild(img);
-// //   });
-// // }
 
 // connectToEndpoint(chosenAPI, "10");
 // // displayResults(dogImages);
