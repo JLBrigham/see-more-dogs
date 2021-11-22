@@ -27,33 +27,11 @@ class ApiConnection {
   }
 }
 
-var apiConnection = new ApiConnection(
-  "https://dog.ceo/api/breeds/image/random/10"
-);
+// var apiConnection = new ApiConnection(
+//   "https://dog.ceo/api/breeds/image/random/10"
+// );
 
-apiConnection.connectToEndpoint();
-setTimeout(function () {
-  apiConnection.displayResults();
-}, 5000);
-
-// var chosenAPI = "https://dog.ceo/api/breeds/image/random/";
-
-// var results = [];
-
-// function displayResults(results) {
-//   console.log(results);
-// var div = document.getElementsByClassName("content-container");
-// results.forEach((result) => {
-//   console.log(result);
-// var img = document.createElement("img");
-// img.src = result;
-// console.log(img.src);
-
-// div.appendChild(img);
-//   });
-// }
-
-// }
-
-// connectToEndpoint(chosenAPI, "10");
-// // displayResults(dogImages);
+// apiConnection.connectToEndpoint();
+// setTimeout(function () {
+//   apiConnection.displayResults();
+// }, 5000);
