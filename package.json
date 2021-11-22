@@ -1,0 +1,8 @@
+{
+  "name": "see-more-dogs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:JLBrigham/see-more-dogs.git",
+  "author": "Joanna Brigham <joannabrigham@hotmail.co.uk>",
+  "license": "MIT"
+}
