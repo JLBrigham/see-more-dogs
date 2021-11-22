@@ -3,15 +3,18 @@ var apiConnection = new ApiConnection(
 );
 
 apiConnection.connectToEndpoint();
+
+// function delayed to give above function time to connect to api
 setTimeout(function () {
   apiConnection.displayResults();
 }, 2000);
 
 var x = document.getElementById("btn");
-console.log(x);
+
 x.addEventListener("click", function () {
   apiConnection.connectToEndpoint();
 });
+
 x.addEventListener("click", function () {
   setTimeout(function () {
     apiConnection.displayResults();
