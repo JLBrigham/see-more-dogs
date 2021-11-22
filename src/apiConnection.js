@@ -14,10 +14,28 @@
 //     });
 //   });
 
+var chosenAPI = "https://dog.ceo/api/breeds/image/random/";
+
+var dogImages = [];
+
 function connectToEndpoint(url, numberOfResults) {
   fetch(url + numberOfResults)
     .then((res) => res.json())
-    .then((data) => console.log(data.message));
+    .then((data) => {
+      dogImages = data.message;
+      console.log(dogImages);
+    })
+    .catch((err) => console.log(err));
 }
 
-connectToEndpoint("https://dog.ceo/api/breeds/image/random/", "10");
+function displayResults(results) {
+  results.forEach((result) => {
+    var img = document.createElement("img");
+    img.src = result;
+
+    document.body.appendChild(img);
+  });
+}
+
+connectToEndpoint(chosenAPI, "10");
+displayResults(dogImages);
