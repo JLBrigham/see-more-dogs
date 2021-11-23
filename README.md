@@ -32,7 +32,7 @@ Acceptance Criteria-
 
 Once I had decided on the API I wanted to use, I created a sequence diagram for the application.
 
-<img width="898" alt="Screenshot 2021-11-23 at 12 06 25" src="https://user-images.githubusercontent.com/74301627/143013743-02020d8b-fdf2-4551-a33f-d9d4e6c420fe.png">
+<img width="904" alt="Screenshot 2021-11-23 at 12 08 48" src="https://user-images.githubusercontent.com/74301627/143013961-7c00ddbc-01e5-42ab-80ba-1f328078a6fd.png">
 
 I then made a quick low fidelity wire frame diagram to plan what the page would look like.
 
