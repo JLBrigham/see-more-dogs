@@ -56,7 +56,7 @@ I am using the API endpoint which gives me random images, the maximum in one req
 
 I decided instead to just fetch 10 results from the API at a time, that was I was not going to be retrieving data unnecessarily. I decided that as 10 results were rendered when the user opened the page, it was sensible that 10 more results got loaded on each click.
 
-I created an ApiConnection class to avoid using a global variable to store the results fetched from the API. A new instance of this class is then created in teh interface.js file to control what the user sees.
+I created an ApiConnection class to avoid using a global variable to store the results fetched from the API. A new instance of this class is then created in the interface.js file to control what the user sees.
 
 ## Reflections
 
