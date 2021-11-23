@@ -10,13 +10,13 @@ setTimeout(function () {
   apiConnection.displayResults();
 }, 1500);
 
-var button = document.getElementById("btn");
+var addMoreButton = document.getElementById("btn");
 
-button.addEventListener("click", function () {
+addMoreButton.addEventListener("click", function () {
   apiConnection.connectToEndpoint();
 });
 
-button.addEventListener("click", function () {
+addMoreButton.addEventListener("click", function () {
   setTimeout(function () {
     apiConnection.displayResults();
   }, 1500);

@@ -46,6 +46,6 @@ body {
 .images-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   width: 1000px;
 }
