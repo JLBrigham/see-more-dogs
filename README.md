@@ -36,6 +36,8 @@ Once I had decided on the API I wanted to use, I created a sequence diagram for 
 
 I then made a quick low fidelity wire frame diagram to plan what the page would look like.
 
+[Low Fidelity Wireframes Template.pdf](https://github.com/JLBrigham/see-more-dogs/files/7587499/Low.Fidelity.Wireframes.Template.pdf)
+
 ## My Approach
 
 I chose to use an API of [dog images](https://dog.ceo/dog-api/), because who doesn't like dogs. I also chose this API as there were no CORS issues, understanding CORS and how to work with it is something I need to look into further.
