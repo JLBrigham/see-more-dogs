@@ -6,7 +6,7 @@ A one page web application which connects to an api to display dog photos to the
 
 To visit the site follow this link-
 
-[https://see-more-dogs.netlify.app/]
+https://see-more-dogs.netlify.app/
 
 Alternatively, if you would prefer to visit it locally from your computer-
 
@@ -36,7 +36,8 @@ Once I had decided on the API I wanted to use, I created a sequence diagram for 
 
 I then made a quick low fidelity wire frame diagram to plan what the page would look like.
 
-[Low Fidelity Wireframes Template.pdf](https://github.com/JLBrigham/see-more-dogs/files/7587499/Low.Fidelity.Wireframes.Template.pdf)
+
+<img width="341" alt="Screenshot 2021-11-23 at 12 11 38" src="https://user-images.githubusercontent.com/74301627/143014310-a07c4120-d74f-4e2b-b75b-5153385bdb8a.png">
 
 ## My Approach
 
