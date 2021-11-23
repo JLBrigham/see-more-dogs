@@ -16,6 +16,8 @@ Alternatively, if you would prefer to visit it locally from your computer-
 
 When the page loads you will see a title, subtitle, dog icon button and 10 dog images, to see more images just click the dog icon and 10 more images will load at the bottom of the page. Keep clicking to see more dogs!
 
+(<img width="1400" alt="Screenshot 2021-11-23 at 11 32 29" src="https://user-images.githubusercontent.com/74301627/143012374-4eb50d6f-0740-469d-8732-ef61ea00636a.png">)
+
 ## The Brief
 
 As a team member, I want to see a list of results pulled from a public API of the engineer's choosing displayed on a web page because it allows me to see how the engineer writes code.
