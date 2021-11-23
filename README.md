@@ -60,7 +60,7 @@ I created an ApiConnection class to avoid using a global variable to store the r
 
 ## Reflections
 
-It's been a little while since I worked with JavaScript without any frameworks so this was a really good exercise for me a good level of challenge, I enjoyed completig it and felt like I was learning a lot and consolidating along the way.
+It's been a little while since I worked with JavaScript without any frameworks so this was a really good exercise for me a good level of challenge, I enjoyed completing it and felt like I was learning a lot and consolidating along the way.
 
 I didn't manage to use any Web Components, I have not used these before so it will require a bit of research. I plan on doing this before the next interview and maybe having a play around and try to impliment them in this project.
 
