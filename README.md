@@ -32,6 +32,8 @@ Acceptance Criteria-
 
 Once I had decided on the API I wanted to use, I created a sequence diagram for the application.
 
+[DogsSequenceDiagram.txt](https://github.com/JLBrigham/see-more-dogs/files/7587467/DogsSequenceDiagram.txt)
+
 I then made a quick low fidelity wire frame diagram to plan what the page would look like.
 
 ## My Approach
