@@ -1,4 +1,45 @@
-.dog-image {
-  height: 300px;
-  width: 200px;
+body {
+  margin: 0;
+  background-color: #efe3d0;
+  color: #986d8e;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-family: "Fredoka One", cursive;
+  font-size: 8em;
+  margin-top: 40px;
+}
+
+.subtitle {
+  font-family: "Dosis", sans-serif;
+  font-size: 2em;
+}
+
+.subtitle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.add-more-btn {
+  background-color: #efe3d0;
+  border: none;
+  font-size: 8em;
+  color: #986d8e;
+  padding-left: 70px;
+}
+
+.add-more-btn:hover {
+  color: #87a8a4;
+}
+.content-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

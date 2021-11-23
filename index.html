@@ -7,16 +7,25 @@
     <title>See More Dogs</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4d2cead647.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="heading-container">
-      <h1>See More Dogs</h1>
+      <h1 class="title">See More Dogs</h1>
     </div>
-
-    <h2>click the doggo to see even more dogs</h2>
-    <button id="btn" class="add-more-btn">Doggo</button>
-    <div id="content-container"></div>
+    <div class="subtitle-container">
+      <h2 class="subtitle">click the doggo to see even more dogs -></h2>
+      <button id="btn" class="add-more-btn"><i class="fas fa-dog"></i></button>
+    </div>
+    <div id="content-container" class="content-container"></div>
 
     <script src="src/apiConnection.js" async defer></script>
     <script src="src/interface.js" async defer></script>

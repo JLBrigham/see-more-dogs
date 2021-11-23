@@ -4,19 +4,20 @@ var apiConnection = new ApiConnection(
 
 apiConnection.connectToEndpoint();
 
-// function delayed to give above function time to connect to api
+/* function delayed to give above function time to connect to api */
+
 setTimeout(function () {
   apiConnection.displayResults();
-}, 2000);
+}, 1500);
 
-var x = document.getElementById("btn");
+var button = document.getElementById("btn");
 
-x.addEventListener("click", function () {
+button.addEventListener("click", function () {
   apiConnection.connectToEndpoint();
 });
 
-x.addEventListener("click", function () {
+button.addEventListener("click", function () {
   setTimeout(function () {
     apiConnection.displayResults();
-  }, 2000);
+  }, 1500);
 });

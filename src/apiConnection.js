@@ -10,7 +10,10 @@ class ApiConnection {
       .then((data) => {
         this.results = data.message;
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log(err);
+        alert("No more dogs at the moment :(");
+      });
   }
 
   displayResults() {
