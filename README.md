@@ -16,7 +16,7 @@ Alternatively, if you would prefer to visit it locally from your computer-
 
 When the page loads you will see a title, subtitle, dog icon button and 10 dog images, to see more images just click the dog icon and 10 more images will load at the bottom of the page. Keep clicking to see more dogs!
 
-https://github.com/JLBrigham/see-more-dogs/issues/1#issue-1061106772
+<img width="1400" alt="Screenshot 2021-11-23 at 11 32 29" src="https://user-images.githubusercontent.com/74301627/143012374-4eb50d6f-0740-469d-8732-ef61ea00636a.png">
 
 ## The Brief
 
@@ -36,11 +36,11 @@ Given I view the page And initial results have been loaded When I press the load
 
 Once I had decided on the API I wanted to use, I created a sequence diagram for the application.
 
-https://github.com/JLBrigham/see-more-dogs/issues/3#issue-1061117872
+<img width="904" alt="Screenshot 2021-11-23 at 12 08 48" src="https://user-images.githubusercontent.com/74301627/143013961-7c00ddbc-01e5-42ab-80ba-1f328078a6fd.png">
 
 I then made a quick low fidelity wire frame diagram to plan what the page would look like.
 
-https://github.com/JLBrigham/see-more-dogs/issues/4#issue-1061121484
+<img width="341" alt="Screenshot 2021-11-23 at 12 11 38" src="https://user-images.githubusercontent.com/74301627/143014310-a07c4120-d74f-4e2b-b75b-5153385bdb8a.png">
 
 ## My Approach
 
