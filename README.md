@@ -1,6 +1,6 @@
 # See-More-Dogs
 
-A one page web application which connects to an api to display dog photos to the user.
+A one page web application which connects to an API to display dog photos to the user.
 
 ## How to use
 
