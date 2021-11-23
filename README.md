@@ -16,6 +16,8 @@ Alternatively, if you would prefer to visit it locally from your computer-
 
 When the page loads you will see a title, subtitle, dog icon button and 10 dog images, to see more images just click the dog icon and 10 more images will load at the bottom of the page. Keep clicking to see more dogs!
 
+https://github.com/JLBrigham/see-more-dogs/issues/1#issue-1061106772
+
 ## The Brief
 
 As a team member, I want to see a list of results pulled from a public API of the engineer's choosing displayed on a web page because it allows me to see how the engineer writes code.
@@ -34,7 +36,11 @@ Given I view the page And initial results have been loaded When I press the load
 
 Once I had decided on the API I wanted to use, I created a sequence diagram for the application.
 
+https://github.com/JLBrigham/see-more-dogs/issues/3#issue-1061117872
+
 I then made a quick low fidelity wire frame diagram to plan what the page would look like.
+
+https://github.com/JLBrigham/see-more-dogs/issues/4#issue-1061121484
 
 ## My Approach
 
