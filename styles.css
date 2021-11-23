@@ -41,5 +41,11 @@ body {
 .content-container {
   display: flex;
   justify-content: center;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  width: 1000px;
 }
