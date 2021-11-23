@@ -16,6 +16,8 @@ Alternatively, if you would prefer to visit it locally from your computer-
 
 When the page loads you will see a title, subtitle, dog icon button and 10 dog images, to see more images just click the dog icon and 10 more images will load at the bottom of the page. Keep clicking to see more dogs!
 
+<img width="1400" alt="Screenshot 2021-11-23 at 11 32 29" src="https://user-images.githubusercontent.com/74301627/143012374-4eb50d6f-0740-469d-8732-ef61ea00636a.png">
+
 ## The Brief
 
 As a team member, I want to see a list of results pulled from a public API of the engineer's choosing displayed on a web page because it allows me to see how the engineer writes code.
@@ -34,7 +36,11 @@ Given I view the page And initial results have been loaded When I press the load
 
 Once I had decided on the API I wanted to use, I created a sequence diagram for the application.
 
+<img width="904" alt="Screenshot 2021-11-23 at 12 08 48" src="https://user-images.githubusercontent.com/74301627/143013961-7c00ddbc-01e5-42ab-80ba-1f328078a6fd.png">
+
 I then made a quick low fidelity wire frame diagram to plan what the page would look like.
+
+<img width="341" alt="Screenshot 2021-11-23 at 12 11 38" src="https://user-images.githubusercontent.com/74301627/143014310-a07c4120-d74f-4e2b-b75b-5153385bdb8a.png">
 
 ## My Approach
 
@@ -50,11 +56,11 @@ I am using the API endpoint which gives me random images, the maximum in one req
 
 I decided instead to just fetch 10 results from the API at a time, that was I was not going to be retrieving data unnecessarily. I decided that as 10 results were rendered when the user opened the page, it was sensible that 10 more results got loaded on each click.
 
-I created an ApiConnection class to avoid using a global variable to store the results fetched from the API. A new instance of this class is then created in teh interface.js file to control what the user sees.
+I created an ApiConnection class to avoid using a global variable to store the results fetched from the API. A new instance of this class is then created in the interface.js file to control what the user sees.
 
 ## Reflections
 
-It's been a little while since I worked with JavaScript without any frameworks so this was a really good exercise for me a good level of challenge, I enjoyed completig it and felt like I was learning a lot and consolidating along the way.
+It's been a little while since I worked with JavaScript without any frameworks so this was a really good exercise for me a good level of challenge, I enjoyed completing it and felt like I was learning a lot and consolidating along the way.
 
 I didn't manage to use any Web Components, I have not used these before so it will require a bit of research. I plan on doing this before the next interview and maybe having a play around and try to impliment them in this project.
 
