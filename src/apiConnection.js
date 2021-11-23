@@ -17,7 +17,7 @@ class ApiConnection {
   }
 
   displayResults() {
-    var div = document.getElementById("content-container");
+    var div = document.getElementById("images-container");
     this.results.forEach((result) => {
       var img = document.createElement("img");
       img.src = result;
