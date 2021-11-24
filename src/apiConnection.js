@@ -9,6 +9,7 @@ class ApiConnection {
       .then((res) => res.json())
       .then((data) => {
         this.results = data.message;
+        console.log(this.results);
       })
       .catch((err) => {
         console.log(err);
@@ -26,5 +27,10 @@ class ApiConnection {
 
       div.appendChild(img);
     });
+  }
+
+  connectAndDisplay(connect, display) {
+    connect();
+    display();
   }
 }
