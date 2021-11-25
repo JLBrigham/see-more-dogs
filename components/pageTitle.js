@@ -1,13 +1,19 @@
 const template = document.createElement("template");
 template.innerHTML = `
 <style>
-h1 {font-family: "Fredoka One", cursive;}
-.heading-container {  display: flex;
-    justify-content: center;}
+  h1 {
+      font-family: "Fredoka One", cursive;
+      font-size: 8em;
+      margin-top: 40px;
+    }
+  .heading-container {
+      display: flex;
+      justify-content: center;
+    }
 </style>
-<div class="heading-container">
-<h1></h1>
-</div>
+  <div class="heading-container">
+    <h1></h1>
+  </div>
 
 `;
 
