@@ -30,7 +30,9 @@ class ApiConnection {
   }
 
   deleteResults() {
-    var dogImg = document.getElementsByClassName("dog-img");
-    dogImg.remove();
+    var dogImg = document.querySelectorAll(".dog-img");
+    dogImg.forEach((image) => {
+      image.remove();
+    });
   }
 }

@@ -14,7 +14,9 @@ Alternatively, if you would prefer to visit it locally from your computer-
 - Navigate to the root of the directory
 - Run `open index.html`
 
-When the page loads you will see a title, subtitle, dog icon button and 10 dog images, to see more images just click the dog icon and 10 more images will load at the bottom of the page. Keep clicking to see more dogs!
+When the page loads you will see a title, 10 dog images and 2 icons, a dog and a paw. To see more images of random dog breeds just click the dog icon and 10 more images will load. If you'd just like to see images of Boston Terriers, click the paw icon, all the other dog images will be deleted and you will just see images of Boston Terriers ❤️.
+
+Keep clicking to see more dogs!
 
 <img width="1400" alt="Screenshot 2021-11-23 at 11 32 29" src="https://user-images.githubusercontent.com/74301627/143012374-4eb50d6f-0740-469d-8732-ef61ea00636a.png">
 
@@ -32,7 +34,7 @@ Given I view the page When the application fetches data from an API Then only th
 Given I view the page And initial results have been loaded When I press the load more button Then the next N results should be loaded
 ```
 
-## Planning documents
+## Planning Documents
 
 Once I had decided on the API I wanted to use, I created a sequence diagram for the application.
 
@@ -48,28 +50,38 @@ I chose to use an API of [dog images](https://dog.ceo/dog-api/), because who doe
 
 I am using the API endpoint which gives me random images, the maximum in one request is 50. My initial idea was to make one API call and get all the data I needed in that call and store it. I would then slice the object at different points on each click until I ran out of results. However I soon realised that there were a couple of issues with this approach:
 
--I was making things more complicated for myself as I was going to need to use various variables to record the state of which results had already been rendered.
+- I was making things more complicated for myself as I was going to need to use various variables to record the state of which results had already been rendered.
 
--I risked fetching data that was not going to end up being used, this would make the app less performative.
+- I risked fetching data that was not going to end up being used, this would make the app less performative.
 
--I also risked the user reaching the end of the results quite quickly and would have to make a decision as to what would happen then.
+- I also risked the user reaching the end of the results quite quickly and would have to make a decision as to what would happen then.
 
 I decided instead to just fetch 10 results from the API at a time, that was I was not going to be retrieving data unnecessarily. I decided that as 10 results were rendered when the user opened the page, it was sensible that 10 more results got loaded on each click.
 
 I created an ApiConnection class to avoid using a global variable to store the results fetched from the API. A new instance of this class is then created in the interface.js file to control what the user sees.
 
-## Reflections
+## What I'm Continuing To Work On
 
-It's been a little while since I worked with JavaScript without any frameworks so this was a really good exercise for me a good level of challenge, I enjoyed completing it and felt like I was learning a lot and consolidating along the way.
+### Promiese and Callbacks
 
-I didn't manage to use any Web Components, I have not used these before so it will require a bit of research. I plan on doing this before the next interview and maybe having a play around and try to impliment them in this project.
+**UPDATE(30/11)**- My code is now much cleaner and I have managed to ensure that the displayResults function is not called before the promise was fulfilled in the connectoToEndpoint function without using the setTimeout function. The connectToEndpoint function now returns a promise and I have chained on a .then when it is called in the interface.js file which then calls the display results function.
+
+**UPDATE(24/11)**- I have been looking at this further (on branch callbacks) and I now think that the reason I couldn't get the callback function to work was to do with `this`. I was getting a cannot read properties of undefined error realted to reading 'url' when I tried to call the callback function in the interface.js file. From a bit of reading I learnt that perhapd I need to use `bind`. I have managed to get the callback semi-working currently, however it only works onlick and not when the page initially loads. I still need to look into this further, I am also not sure if what I am trying to do is the best method or whether it may be better to try and use a promise, again something I need to look at further.
 
 So as to ensure the displayResults() function did not try to run before the promise was fulfilled I used the setTimeout() function. I think there must be a better way to do this, for example passing the displayResults() function as a callback to the connectToEndpoint() function, however though I tried this I couldn't get it to work and it is something I plan to look into further as I believe it would improve my code quality as I would achieve the same result with fewer lines of code.
 
-UPDATE(24/11)- I have been looking at this further (on branch callbacks) and I now think that the reason I couldn't get the callback function to work was to do with `this`. I was getting a cannot read properties of undefined error realted to reading 'url' when I tried to call the callback function in the interface.js file. From a bit of reading I learnt that perhapd I need to use `bind`. I have managed to get the callback semi-working currently, however it only works onlick and not when the page initially loads. I still need to look into this further, I am also not sure if what I am trying to do is the best method or whether it may be better to try and use a promise, again something I need to look at further.
+### Further Functionality
 
-As the app is user focused I decided to deploy it, I used Netlify mainly because I have never used it before so wanted to see how it compared with Github Pages, it was very straight forward, I was impressed!
+I have a couple of ideas for further functionality, none of which I currently know how to implement so all will be a good learning experience for me.
 
-It would be good to add some tests to the code, the only JavaScript testing framework I have used is Jasmine but I would like to learn Jest and it owuld be nice to add that into this project in future.
+- Currently when you click the paw for just Boston Terrier images you only see 10 images at a time as the previous images are deleted. I would like to update this so that the Boston Terrier images don't delete, only the images retrieved using the other button
 
-Update 25/11- Since submitting the project I have created 2 new branches, web-components and callbacks. I've used these branches to experiment with improving the code, in the web-components branch I have started to try and use native Web Components for the first time and in the callbacks branch I have been trying to improve the JavaScript code I wrote in the apiConnection and interface files.
+- A drop down menu where user can select from a number of dog breeds, only images of this breed will then be displayed
+
+### Testing
+
+It would be good to add some tests to the code, the only JavaScript testing framework I have used is Jasmine but I would like to learn Jest and it would be nice to add that into this project in future. I am not that confident using mocks and stubs when testing so it will be a good opportunity to also practice this.
+
+### Code Quality
+
+I currently just have one ApiConnection class, but as I add further functionality I feel that this class is starting to do too much, I would like to separte it into atleast two classes, one that manages connecting to the API and another that manages the rendering of the results.
