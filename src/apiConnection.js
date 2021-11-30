@@ -20,11 +20,17 @@ class ApiConnection {
     var div = document.getElementById("images-container");
     this.results.forEach((result) => {
       var img = document.createElement("img");
+      img.classList.add("dog-img");
       img.src = result;
       img.height = 300;
       img.width = 200;
 
       div.appendChild(img);
     });
+  }
+
+  deleteResults() {
+    var dogImg = document.getElementsByClassName("dog-img");
+    dogImg.remove();
   }
 }

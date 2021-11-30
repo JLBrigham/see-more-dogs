@@ -25,3 +25,12 @@ bostonOnlyButton.addEventListener("click", function () {
     .connectToEndpoint()
     .then(bostonApiConnection.displayResults.bind(bostonApiConnection));
 });
+
+var deleteButton = document.getElementById("delete-btn");
+
+deleteButton.addEventListener("click", function () {
+  var dogImg = document.querySelectorAll(".dog-img");
+  dogImg.forEach((image) => {
+    image.remove();
+  });
+});
