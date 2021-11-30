@@ -13,11 +13,26 @@ body {
   font-family: "Fredoka One", cursive;
   font-size: 8em;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .subtitle {
   font-family: "Dosis", sans-serif;
   font-size: 2em;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #87a8a4;
+}
+
+.subtitle-boston {
+  font-family: "Dosis", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #87a8a4;
+  align-self: flex-end;
 }
 
 .subtitle-container {
@@ -27,13 +42,16 @@ body {
   margin-bottom: 40px;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+}
 .add-more-btn,
 .boston-btn {
   background-color: #efe3d0;
   border: none;
   font-size: 8em;
   color: #986d8e;
-  padding-left: 70px;
 }
 
 .add-more-btn:hover,
