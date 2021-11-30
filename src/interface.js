@@ -2,22 +2,26 @@ var apiConnection = new ApiConnection(
   "https://dog.ceo/api/breeds/image/random/10"
 );
 
-apiConnection.connectToEndpoint();
+var bostonApiConnection = new ApiConnection(
+  "https://dog.ceo/api/breed/bulldog/boston/images/random/10"
+);
 
-/* function delayed to give above function time to connect to api */
-
-setTimeout(function () {
-  apiConnection.displayResults();
-}, 1500);
+apiConnection
+  .connectToEndpoint()
+  .then(apiConnection.displayResults.bind(apiConnection));
 
 var addMoreButton = document.getElementById("btn");
 
 addMoreButton.addEventListener("click", function () {
-  apiConnection.connectToEndpoint();
+  apiConnection
+    .connectToEndpoint()
+    .then(apiConnection.displayResults.bind(apiConnection));
 });
 
-addMoreButton.addEventListener("click", function () {
-  setTimeout(function () {
-    apiConnection.displayResults();
-  }, 1500);
+var bostonOnlyButton = document.getElementById("boston-btn");
+
+bostonOnlyButton.addEventListener("click", function () {
+  bostonApiConnection
+    .connectToEndpoint()
+    .then(bostonApiConnection.displayResults.bind(bostonApiConnection));
 });

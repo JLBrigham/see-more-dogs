@@ -27,7 +27,8 @@ body {
   margin-bottom: 40px;
 }
 
-.add-more-btn {
+.add-more-btn,
+.boston-btn {
   background-color: #efe3d0;
   border: none;
   font-size: 8em;
@@ -35,9 +36,11 @@ body {
   padding-left: 70px;
 }
 
-.add-more-btn:hover {
+.add-more-btn:hover,
+.boston-btn:hover {
   color: #87a8a4;
 }
+
 .content-container {
   display: flex;
   justify-content: center;
