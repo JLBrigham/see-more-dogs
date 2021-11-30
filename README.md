@@ -14,11 +14,11 @@ Alternatively, if you would prefer to visit it locally from your computer-
 - Navigate to the root of the directory
 - Run `open index.html`
 
-When the page loads you will see a title, 10 dog images and 2 icons, a dog and a paw. To see more images of random dog breeds just click the dog icon and 10 more images will load. If you'd just like to see images of Boston Terriers, click the paw icon, all the other dog images will be deleted and you will just see images of Boston Terriers ❤️.
+When the page loads you will see a title, 10 dog images and 2 icons, a dog and a paw. To see more images of random dog breeds just click the dog icon and 10 more images will load. If you'd just like to see images of Boston Terriers, click the paw icon, all the other dog images will be deleted and you will just see images of Boston Terriers ❤️
 
 Keep clicking to see more dogs!
 
-<img width="1400" alt="Screenshot 2021-11-23 at 11 32 29" src="https://user-images.githubusercontent.com/74301627/143012374-4eb50d6f-0740-469d-8732-ef61ea00636a.png">
+<img width="1433" alt="Screenshot 2021-11-30 at 12 51 30" src="https://user-images.githubusercontent.com/74301627/144050978-f8279b1c-8f5e-4df1-9da0-ef080905083f.png">
 
 ## The Brief
 
