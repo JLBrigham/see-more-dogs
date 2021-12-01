@@ -16,11 +16,13 @@ apiConnection
   .connectToEndpoint()
   .then(apiConnection.displayResults.bind(apiConnection));
 
+// Dropdown list of all dog breeds
+
 breedListApiConnection
   .connectToEndpoint()
   .then(breedListApiConnection.createBreedList.bind(breedListApiConnection));
 
-// Adds 10 more dog images to page
+// Adds 10 more random dog images to page
 
 var addMoreButton = document.getElementById("btn");
 
@@ -39,4 +41,20 @@ bostonOnlyButton.addEventListener("click", function () {
   bostonApiConnection
     .connectToEndpoint()
     .then(bostonApiConnection.displayResults.bind(bostonApiConnection));
+});
+
+var breedDropDown = document.getElementById("breed-list");
+
+breedDropDown.addEventListener("change", function () {
+  if (breedDropDown.value != "Dogs, dogs and more dogs") {
+    var selectBreedApiConnection = new ApiConnection(
+      `https://dog.ceo/api/breed/${breedDropDown.value}/images`
+    );
+
+    selectBreedApiConnection
+      .connectToEndpoint()
+      .then(
+        selectBreedApiConnection.displayResults.bind(selectBreedApiConnection)
+      );
+  }
 });
