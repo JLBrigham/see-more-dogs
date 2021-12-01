@@ -6,11 +6,19 @@ var bostonApiConnection = new ApiConnection(
   "https://dog.ceo/api/breed/bulldog/boston/images/random/10"
 );
 
+var breedListApiConnection = new ApiConnection(
+  "https://dog.ceo/api/breeds/list/all"
+);
+
 // 10 images of dogs appear when page is opened
 
 apiConnection
   .connectToEndpoint()
   .then(apiConnection.displayResults.bind(apiConnection));
+
+breedListApiConnection
+  .connectToEndpoint()
+  .then(breedListApiConnection.createBreedList.bind(breedListApiConnection));
 
 // Adds 10 more dog images to page
 

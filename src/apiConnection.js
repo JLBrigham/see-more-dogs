@@ -35,4 +35,16 @@ class ApiConnection {
       image.remove();
     });
   }
+
+  createBreedList() {
+    var breedList = document.getElementById("breed-list");
+
+    var resultsKeys = Object.keys(this.results);
+
+    resultsKeys.forEach((result) => {
+      var option = document.createElement("option");
+      option.innerHTML = result;
+      breedList.appendChild(option);
+    });
+  }
 }
