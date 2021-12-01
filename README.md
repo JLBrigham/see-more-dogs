@@ -64,6 +64,8 @@ I created an ApiConnection class to avoid using a global variable to store the r
 
 ### Promiese and Callbacks
 
+I have chained together .then functions but have since read that perhaps a cleaner, more modern way to do this is to use async/await. I've had an introduction to this but plan to do a bit more research to make sure I fully understand how async/await works incase I come across it in other projects. At the moment I'm not planning on integrating it into this project
+
 **UPDATE(30/11)**- My code is now much cleaner and I have managed to ensure that the displayResults function is not called before the promise was fulfilled in the connectoToEndpoint function without using the setTimeout function. The connectToEndpoint function now returns a promise and I have chained on a .then when it is called in the interface.js file which then calls the display results function.
 
 **UPDATE(24/11)**- I have been looking at this further (on branch callbacks) and I now think that the reason I couldn't get the callback function to work was to do with `this`. I was getting a cannot read properties of undefined error realted to reading 'url' when I tried to call the callback function in the interface.js file. From a bit of reading I learnt that perhapd I need to use `bind`. I have managed to get the callback semi-working currently, however it only works onlick and not when the page initially loads. I still need to look into this further, I am also not sure if what I am trying to do is the best method or whether it may be better to try and use a promise, again something I need to look at further.
