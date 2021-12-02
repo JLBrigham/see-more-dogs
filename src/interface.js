@@ -43,10 +43,12 @@ bostonOnlyButton.addEventListener("click", function () {
     .then(bostonApiConnection.displayResults.bind(bostonApiConnection));
 });
 
+// User selects from list of all breeds which dog photos they want to see
+
 var breedDropDown = document.getElementById("breed-list");
 
 breedDropDown.addEventListener("change", function () {
-  if (breedDropDown.value != "Dogs, dogs and more dogs") {
+  if (breedDropDown.value != "Pick a breed") {
     var selectBreedApiConnection = new ApiConnection(
       `https://dog.ceo/api/breed/${breedDropDown.value}/images`
     );
